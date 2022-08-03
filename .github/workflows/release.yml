@@ -27,6 +27,7 @@ jobs:
     - run: sudo apt-get install xz-utils
     - run: sudo apt-get install device-tree-compiler
     - run: sudo apt-get install libtool-bin
+    - run: sudo apt-get install meson ninja-build
     - run: git submodule update --init pearl
     - run: make -C pearl -j13 build/qemu.tar.zstd{release}
     - run: make -C pearl -j13 {release}
